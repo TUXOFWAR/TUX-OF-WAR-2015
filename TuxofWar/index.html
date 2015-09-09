@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/main.css">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body background="img/back.jpg">
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<img src="img/tow.png" alt="ToW" style="width:150%;height:150%;">
+				</section>
+				<!-- <section>
+					<h1>Tux of War</h1>
+					<p>Brought to you by Tathva'15</p>
+					<img src="img/tow.png" alt="ToW" style="width:304px;height:228px;">
+				</section> -->
+
+				<section>
+					<h2>Are you a Linux enthusiast?</h2>
+					<p>
+						This is for you!
+					</p>
+				</section>
+				
+				<section>
+					<h2>Rules!</h2>
+					<p>
+						
+							<li>Single-member teams are allowed.</li> <br/>
+							<li>Every contestant should have a valid HackerRank account.</li> <br />
+							<li>The participants must register in the tathva page to claim the prizes.</li> <br/>	
+					</p>
+				</section>
+				
+				<section>
+					<h2>About the Event</h2>
+					<p>
+						<li>There will be questions based on basic Linux shell commands and shell scripting.</li> <br />
+						<li>The contest will be of 1 round and consisting of 3 hours.</li> <br />
+					</p>
+				</section>
+				
+				<section>
+					<h2>Prizes</h2>
+					<p>
+						First prize : Rs 5000
+					</p>
+					<p>
+						Second prize : Rs 2000
+					</p>
+				</section>
+				
+				<section>
+					<h3>Thank you</h3>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
